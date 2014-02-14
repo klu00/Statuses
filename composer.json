@@ -1,0 +1,8 @@
+{
+    "require": {
+         "willdurand/negotiation": "@stable"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    }
+}

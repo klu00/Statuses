@@ -1,0 +1,67 @@
+<?php
+
+require __DIR__ . '/../autoload.php';
+
+use Exception\HttpException;
+use Http\Request;
+
+// Config
+$debug = true;
+
+$app = new \App(new View\TemplateEngine(
+    __DIR__ . '/templates'
+), $debug);
+
+/**
+ * Index
+ */
+$app->get('/', function () use ($app) {
+    return $app->render('index.php');
+});
+
+$app->get('/statuses', function (Request $request) use ($app){
+    /*$memory = new \Model\InMemoryFinder();*/
+    $jsonmanager = new \Model\JsonFinder();
+    $statuses = $jsonmanager->findAll();
+    return $app->render('statusesList.php',array('array' => $statuses));
+});
+
+$app->get('/statuses/(\d+)', function (Request $request, $id) use ($app){
+    //$memory = new \Model\InMemoryFinder();
+    $memory = new \Model\JsonFinder();
+    $status = $memory->findOneById($id);
+    if (!$status instanceof \Model\Status) {
+        throw new HttpException(404,"Status not found");
+    }
+    return  $app->render('status.php', array('status' => $status));
+});
+
+$app->delete('statuses/(\d+)', function (Request $request, $id) use ($app){
+    $jsonmanager = new \Model\JsonFinder();
+    $jsonmanager->delete($id);
+});
+
+$app->post('/statuses', function (Request $request) use ($app){
+   var_dump($request->getParameter('_method'));
+    if ($request->getParameter('_method') === 'DELETE') {
+        
+        $app->delete($request, $id);   
+    }
+    
+    $jsonmanager = new \Model\JsonFinder();
+    $status = new \Model\Status(5, new \DateTime(),$request->getParameter('username'), $request->getParameter('message'));
+    $jsonmanager->add_status($status);
+
+    $app->redirect('/statuses');
+});
+
+$app->->post('/statuses/(\d+)', function (Request $request, $id) use ($app){
+    var_dump($request->getParameter('_method'));
+    if ($request->getParameter('_method') === 'DELETE') {
+    	$app->delete($request, $i
+    }
+
+}
+
+
+return $app;

@@ -1,0 +1,120 @@
+<?php
+
+namespace Model;
+
+class JsonFinder implements FinderInterface {
+    
+    private $file = "save.json";
+
+    public function __construct() {
+        if(!file_exists($this->file)) {
+            $handle = fopen($this->file,"w");
+            fclose($handle);
+        }
+    }    
+    
+    
+    public function add_status(Status $status){
+        $new_status = $this->create_json_status($status);
+
+        $previous_statuses = json_decode(file_get_contents($this->file), true);
+
+        var_dump($new_status);
+
+        array_push($previous_statuses, $new_status); 
+
+        var_dump($previous_statuses); 
+    
+        file_put_contents($this->file, json_encode($previous_statuses, JSON_FORCE_OBJECT) . "\n");
+    }
+
+    private function create_status_list_from_array($array_decode){
+        $status_array = array();
+        foreach($array_decode as $status) {
+            $status_array[] = $this->create_status_from_array($status);
+        }
+
+        return $status_array;
+
+    }
+
+    private function create_status_from_array($status){
+        $status_id = $status['id'];
+        $status_user = $status['user'];
+        $status_message = $status['message'];
+        $status_date = \DateTime::createFromFormat("Y-m-d H:i:s", $status['date']);
+        return new Status($status_id, $status_date, $status_user, $status_message);
+    }
+
+    private function create_status_from_json($array_decode, $id) {
+        foreach($array_decode as $status){
+            if($status['id'] == $id)
+            {
+                return $this->create_status_from_array($status);
+            }
+        }
+    }
+
+    private function create_json_status(Status $status){
+        $array = ['id' => $status->getId(),
+                    'user' => $status->getUser(),
+                    'message' => $status->getMessage(),
+                    'date' => $status->getDate()->format('Y-m-d H:i:s'),
+        ];
+
+        return $array;
+    }     
+
+    public function findOneById($id){
+       $array_decode = json_decode(file_get_contents($this->file), true);
+       
+       if($status = $this->create_status_from_json($array_decode, $id))
+          return $status;
+       return null;
+    }
+
+    public function findAll(){
+        $array_decode = json_decode(file_get_contents($this->file), true);   
+        return $this->create_status_list_from_array($array_decode);
+    }
+    
+    
+    public function newId()
+    {
+        return substr(number_format(time() * rand(),0,'',''),0,10);
+    }
+
+    public function delete($id)
+    {
+        $array_decode = json_decode(file_get_contents($this->file), true);
+
+        $status_array = $this->create_status_list_from_array($array_decode);
+
+        var_dump($id);
+
+        var_dump("OLD array size : " . count($status_array));
+        $new_array = array();
+
+        foreach($status_array as $status)
+        {
+            var_dump($status->getId());
+            if($status->getId() != $id)
+            {
+                $new_array[] = $status;
+            }
+        }
+
+        var_dump("New array : " . count($new_array));
+
+
+        $array_to_write = array();
+        foreach($new_array as $status)
+        {
+            $array_to_write[] = $this->create_array_from_object($status);
+        }
+
+        file_put_contents($this->file, json_encode($array_to_write, JSON_FORCE_OBJECT) . "\n");
+
+    }
+
+} 
