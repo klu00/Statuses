@@ -11,7 +11,7 @@ class Status {
 
     private $user;
 
-    public function __construct($id = null, \DateTime $date, $user, $message) {
+    public function __construct($id = null, \DateTime $date,User $user, $message) {
         $this->id = $id;
         $this->message = $message;
         $this->date = $date;

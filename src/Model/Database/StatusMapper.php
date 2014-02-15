@@ -10,6 +10,7 @@ namespace Model\Database;
 
 
 use Model\Status;
+use Model\User;
 
 class StatusMapper {
     private $connection;
@@ -21,9 +22,15 @@ class StatusMapper {
     public function persist(Status $status) {
         $query = "INSERT INTO STATUSES VALUES (:status_id, :status_message, :status_user, :status_date)";
 
+        if (isset($_SESSION['is_authenticated']) && $_SESSION['is_authenticated']) {
+            $user_id = $_SESSION['user_id'];
+        } else {
+            $user_id = null;
+        }
+
         return $this->connection->executeQuery($query, [
             ':status_id' => $status->getId(),
-            ':status_user' => $status->getUser(),
+            ':status_user' => $status->getUser()->getId(),
             ':status_message' => $status->getMessage(),
             ':status_date' => $status->getDate()->format('Y-m-d H:i:s'),
         ]);

@@ -2,22 +2,25 @@
 
 namespace Model\Database;
 
-use Exception\HttpException;
 use Model\FinderInterface;
 use Model\Status;
+use Model\User;
 
 class StatusFinder implements FinderInterface {
 
     private $connection;
 
+    private $userFinder;
+
     private $extra_parameters = [
         "orderBy" => " ORDER BY ",
         "limit" => " LIMIT 0, ",
-        "userName" => " WHERE status_user = '",
+        "user" => " WHERE status_user_id = '",
     ];
 
     public function __construct(Connection $connection) {
         $this->connection = $connection;
+        $this->userFinder = new UserFinder($connection);
     }
 
     public function findAll(array $parameters = []) {
@@ -26,7 +29,6 @@ class StatusFinder implements FinderInterface {
             $query .=  $this->constructExtraQuery($parameters);
 
         $statuses_array = [];
-        var_dump($query);
         $statuses = $this->connection->query($query);
         if (false === $statuses) {
             $statuses = $this->connection->query("SELECT * FROM STATUSES;");
@@ -35,7 +37,7 @@ class StatusFinder implements FinderInterface {
         foreach ($statuses as $status) {
             array_push($statuses_array,new Status($status["status_id"],
                                                   new \DateTime($status["status_date"]),
-                                                  $status["status_user"],
+                                                  $this->findUser($status["status_user_id"]),
                                                   $status["status_message"]
 
             ));
@@ -55,15 +57,34 @@ class StatusFinder implements FinderInterface {
         $stmt->bindValue(':id',$id);
         $stmt->execute();
         $status = $stmt->fetch(\PDO::FETCH_ASSOC);
+
         if (null === $status["status_id"])
             return null;
+
         return new Status($status["status_id"],
             new \DateTime($status["status_date"]),
-            $status["status_user"],
+            $this->findUser($status["status_user_id"]),
             $status["status_message"]
         );
     }
 
+    /** Function to find the user associated to the status.
+     * Returns a new Anonymous user if there is no user_id associated with the status.
+     * @param $id
+     * @return mixed|User|null
+     */
+    private function findUser($id) {
+        $status_user = $this->userFinder->findOneById($id);
+        if (null === $status_user) {
+            $status_user = new User(null,"Anonymous",null);
+        }
+        return $status_user;
+    }
+
+    /** Function to build an extra query part when extra parameters are passed into the URL.
+     * @param $parameters
+     * @return string
+     */
     private function constructExtraQuery($parameters) {
         $extra_query = "";
         $limit_query ="";

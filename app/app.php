@@ -17,24 +17,32 @@ $statusMapper = new \Model\Database\StatusMapper($connection);
 $userMapper = new \Model\Database\UserMapper($connection);
 $userFinder = new \Model\Database\UserFinder($connection);
 
+
+// Template engine
 $app = new \App(new View\TemplateEngine(
     __DIR__ . '/templates'
 ), $debug);
 
+
+// Home
 $app->get('/', function () use ($app) {
     $app->redirect('/statuses');
 });
 
+
+// Posts
 $app->get('/statuses', function (Request $request) use ($app, $statusFinder){
     $format = $request->guessBestFormat();
     $response = null;
-    /*if ('json' === $format) {
-        $response = new Response($jsonmanager->findAllJson(), 200, array('Content-Type' => 'application/json'));
+    $parameters = $request->getParameters();
+    $statuses = $statusFinder->findAll($parameters);
+    if ('json' === $format) {
+        $response = new Response(json_encode($statuses,JSON_FORCE_OBJECT), 200, array('Content-Type' => 'application/json'));
         $response->send();
         return;
-    }*/
-    $parameters = $request->getParameters();
-    return $app->render('statusesList.php', array('array' => $statusFinder->findAll($parameters)));
+    }
+
+    return $app->render('statusesList.php', array('array' => $statuses));
 });
 
 $app->get('/statusNotFound', function (Request $request) use ($app){
@@ -47,11 +55,11 @@ $app->get('/statuses/(\d+)', function (Request $request, $id) use ($app, $status
         $app->redirect("/statusNotFound");
     }
     $format = $request->guessBestFormat();
-    /*if ('json' === $format) {
-        $response = new Response(json_encode($memory->findOneByIdJson($id),JSON_FORCE_OBJECT), 200, array('Content-Type' => 'application/json'));
+    if ('json' === $format) {
+        $response = new Response(json_encode($status), 200, array('Content-Type' => 'application/json'));
         $response->send();
         return;
-    }*/
+    }
     return  $app->render('status.php', array('status' => $status));
 });
 
@@ -63,13 +71,19 @@ $app->delete('/statuses/(\d+)', function (Request $request, $id) use ($app,$stat
 $app->post('/statuses', function (Request $request) use ($app,$statusMapper){
     $format = $request->guessBestFormat();
     if ("html" === $format || "json" === $format) {
-        $status = new \Model\Status(null, new \DateTime(),$request->getParameter('username'), $request->getParameter('message'));
+        if (isset($_SESSION['is_authenticated']) && $_SESSION['is_authenticated']) {
+            $user = $_SESSION['user'];
+        } else {
+            $user = new \Model\User(null,"Anonymous", null);
+        }
+        $status = new \Model\Status(null, new \DateTime(), $user, $request->getParameter('message'));
         $statusMapper->persist($status);
     }
     $app->redirect('/statuses');
 });
 
 
+// Session
 $app->get('/login', function () use ($app) {
     return $app->render('login.php');
 });
@@ -88,6 +102,8 @@ $app->post('/login', function (Request $request) use ($app, $userFinder) {
         session_start();
         $_SESSION['is_authenticated'] = true;
         $_SESSION['user_name'] = $name;
+        $_SESSION['user_id'] = $user->getId();
+        $_SESSION['user'] = $user;
         return $app->redirect('/');
     }
 
@@ -100,6 +116,8 @@ $app->get('/logout', function (Request $request) use ($app) {
     return $app->redirect('/');
 });
 
+
+//Register
 $app->get('/register', function () use ($app) {
     return $app->render('register.php');
 });
@@ -107,24 +125,19 @@ $app->get('/register', function () use ($app) {
 $app->post('/register', function (Request $request) use ($app, $userMapper) {
     $name = $request->getParameter('user');
     $password = $request->getParameter('password');
-
-    $format = $request->guessBestFormat();
-    if ("html" === $format || "json" === $format) {
-        var_dump("test");
-        $user = new \Model\User(null, $name, $password);
-        $userMapper->persist($user);
-    }
-
+    $user = new \Model\User(null, $name, $password);
+    $userMapper->persist($user);
     return $app->redirect('/login');
 });
 
+// Firewall
 $app->addListener('process.before', function(Request $req) use ($app) {
     session_start();
 
     $allowed = [
         '/login' => [ Request::GET, Request::POST ],
         '/statuses/(\d+)' => [ Request::GET ],
-        '/statuses' => [ Request::GET ],
+        '/statuses' => [ Request::GET, Request::POST ],
         '/register' => [ Request::GET, Request::POST ],
         '/statusNotFound' => [ Request::GET ],
         '/' => [ Request::GET ],

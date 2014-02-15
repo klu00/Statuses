@@ -13,14 +13,19 @@
  	 	<?php
    			$status = $parameters['status'] ?>
     		<h4>
-            	<?= $status->getUser() ?>
+            	<?= $status->getUser()->getName() ?>
                 <?= date_format($status->getDate(), 'd/m/Y g:i A')?>
             </h4>
             <p><?= $status->getMessage() ?></p>
-            <form action="/statuses/<?= $status->getId() ?>" method="POST">
-   				<input type="hidden" name="_method" value="DELETE">
-			    <input type="submit" value="Delete">
-			</form>
+
+            <?php if (isset($_SESSION['is_authenticated']) && $_SESSION['is_authenticated']
+                && $_SESSION['user_id'] === $status->getUser()) {
+                echo "<form action='/statuses/".$status->getId()."' method='POST'>";
+                echo "	<input type='hidden' name='_method' value='DELETE'>";
+                echo "  <input type='hidden' name='_method' value='DELETE'>";
+                echo "  <input type='submit' value='Delete'>";
+                echo "</form>";
+            }?>
      </div>
  </div>
  </body>
