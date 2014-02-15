@@ -6,7 +6,7 @@ use Model\Status;
 use Model\Database\Connection;
 
 class StatusDataMapperTest extends TestCase {
-	private $finder;
+	/*private $finder;
     private $con;
 
     public function setUp() {
@@ -21,13 +21,17 @@ CREATE TABLE IF NOT EXISTS STATUSES(
 );
 SQL
         );
+        var_dump("allo");
         $this->finder = new StatusFinder($this->con);
     }
 
     public function testPersist() {
+        var_dump("allo2");
         $mapper = new StatusMapper($this->con);
-		$mapper->persist(new Status(1, "01-05-2014 12:45:30", new \Model\User(1,"Lucas","lucas"), "Hello"));
-		$mapper->persist(new Status(2, "02-08-2014 19:25:40", new \Model\User(2,"Aurelien","aurelien"), "Buenos Dias"));
+        var_dump("allo3");
+		$mapper->persist(new Status(1, new DateTime("01-05-2014 12:45:30"), new \Model\User(1,"Lucas","lucas"), "Hello"));
+        var_dump("allo4");
+		$mapper->persist(new Status(2, new DateTime("02-08-2014 19:25:40"), new \Model\User(2,"Aurelien","aurelien"), "Buenos Dias"));
 
         $rows = $this->con->query('SELECT COUNT(*) FROM STATUSES')->fetch(\PDO::FETCH_NUM);
         $this->assertCount(2, count($rows));
@@ -36,19 +40,12 @@ SQL
     public function testFindAll() {
 		$statuses = $this->finder->findAll();
 		$this->assertEquals(2, count($statuses));
-    }
-
+    }/*
+/*
     public function testFindOneById() {
-		$status = $this->finder->findOneById('1');
-		$this->assertEquals("Lucas", $status->getUser());
+		$status = $this->finder->findOneById(1);
 		$this->assertEquals("Hello", $status->getMessage());
-    }
+    }*/
 
 
-    public function tearDown() {
-        $this->con->exec(<<<SQL
-           DROP TABLE STATUSES;
-            SQL
-        );
-    }
 }

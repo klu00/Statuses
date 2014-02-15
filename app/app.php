@@ -46,13 +46,13 @@ $app->get('/statuses', function (Request $request) use ($app, $statusFinder){
 });
 
 $app->get('/statusNotFound', function (Request $request) use ($app){
-    return $app->render('statusNotFound.php');
+    return $app->render('statusNotFound.php',[], 404);
 });
 
 $app->get('/statuses/(\d+)', function (Request $request, $id) use ($app, $statusFinder){
     $status = $statusFinder->findOneById($id);
     if (!$status instanceof \Model\Status) {
-        $app->redirect("/statusNotFound");
+        $app->redirect("/statusNotFound",404);
     }
     $format = $request->guessBestFormat();
     if ('json' === $format) {

@@ -4,7 +4,7 @@ namespace View;
 
 use View\TemplateEngine;
 
-class TemplateEngineTest extends \TestCase
+class TemplateEngineTest extends \PHPUnit_Framework_TestCase
 {
     public function testRender()
     {

@@ -20,7 +20,8 @@ class StatusMapper {
     }
 
     public function persist(Status $status) {
-        $query = "INSERT INTO STATUSES VALUES (:status_id, :status_message, :status_user, :status_date)";
+
+        $query = "INSERT INTO STATUSES VALUES (:status_id, :status_message, :status_user, :status_date);";
 
         if (isset($_SESSION['is_authenticated']) && $_SESSION['is_authenticated']) {
             $user_id = $_SESSION['user_id'];

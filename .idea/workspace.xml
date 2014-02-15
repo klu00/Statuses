@@ -23,58 +23,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="statusesList.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/statusesList.php">
+      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="13" selection-start="706" selection-end="709" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="960">
-              <folding>
-                <marker date="1392486850000" expanded="true" signature="107:166" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="694:1056" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="694:728" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="694:704" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="1017:1056" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="1017:1043" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="1017:1055" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="1102:1245" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="1102:1155" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="1127:1155" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="1547:1582" placeholder="..." />
-                <marker date="1392486850000" expanded="true" signature="1561:1582" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Database/UserMapper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="53" selection-start="528" selection-end="528" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="555">
-              <folding>
-                <marker date="1392488086000" expanded="true" signature="263:326" placeholder="INSERT INTO ..." />
-                <marker date="1392488086000" expanded="true" signature="637:686" placeholder="DELETE FROM ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="35" selection-start="428" selection-end="428" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="525">
+            <state line="48" column="46" selection-start="1372" selection-end="1372" vertical-scroll-proportion="-4.375" vertical-offset="585" max-vertical-offset="2580">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserFinder.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Database/UserFinder.php">
+      <file leaf-file-name="AppTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/AppTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="35" selection-start="936" selection-end="936" vertical-scroll-proportion="-4.6666665" vertical-offset="488" max-vertical-offset="1095">
-              <folding>
-                <marker date="1392400576000" expanded="true" signature="451:470" placeholder="SELECT * FRO..USERS..." />
-                <marker date="1392400576000" expanded="true" signature="958:997" placeholder="SELECT * FRO..USERS..." />
-                <marker date="1392400576000" expanded="true" signature="1416:1459" placeholder="SELECT * FRO..USERS..." />
-              </folding>
+            <state line="2" column="49" selection-start="56" selection-end="56" vertical-scroll-proportion="-0.625" vertical-offset="15" max-vertical-offset="1755">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="APImethodsTest.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/APImethodsTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="36" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.75" vertical-offset="225" max-vertical-offset="930">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Response.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Http/Response.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="30" selection-start="476" selection-end="486" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="765">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,59 +62,7 @@
       <file leaf-file-name="register.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="29" selection-start="343" selection-end="343" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExceptionHandler.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exception/ExceptionHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="54" selection-start="1445" selection-end="1445" vertical-scroll-proportion="-13.75" vertical-offset="510" max-vertical-offset="1230">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="29" selection-start="339" selection-end="339" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatusDataMapperTest.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/StatusDataMapperTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="334" selection-end="605" vertical-scroll-proportion="0.46793762" vertical-offset="0" max-vertical-offset="840">
-              <folding>
-                <marker date="1392490270000" expanded="true" signature="334:603" placeholder="CREATE TABLE..IF..." />
-                <marker date="1392490270000" expanded="true" signature="1019:1048" placeholder="SELECT COUNT..STATUSES..." />
-                <marker date="1392490270000" expanded="true" signature="1531:1550" placeholder="DROP TABLE S..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDataMapperTest.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/UserDataMapperTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="63" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="765">
-              <folding>
-                <marker date="1392489570000" expanded="true" signature="310:479" placeholder="CREATE TABLE..IF..." />
-                <marker date="1392489570000" expanded="true" signature="792:818" placeholder="SELECT COUNT..USERS..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCase.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
+            <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -160,7 +88,6 @@
         <option value="$PROJECT_DIR$/src/Model/UserMapper.php" />
         <option value="$PROJECT_DIR$/src/Routing/Firewall.php" />
         <option value="$PROJECT_DIR$/src/Model/StatusFinder.php" />
-        <option value="$PROJECT_DIR$/src/Model/Database/Connection.php" />
         <option value="$PROJECT_DIR$/src/Security/EventDispatcherTrait.php" />
         <option value="$PROJECT_DIR$/src/Security/Firewall.php" />
         <option value="$PROJECT_DIR$/app/templates/statusNotFound.php" />
@@ -169,16 +96,23 @@
         <option value="$PROJECT_DIR$/app/templates/404.php" />
         <option value="$PROJECT_DIR$/src/App.php" />
         <option value="$PROJECT_DIR$/src/Model/Status.php" />
-        <option value="$PROJECT_DIR$/src/Model/Database/StatusFinder.php" />
-        <option value="$PROJECT_DIR$/src/Model/Database/StatusMapper.php" />
         <option value="$PROJECT_DIR$/app/templates/statusesList.php" />
         <option value="$PROJECT_DIR$/src/Model/Database/UserMapper.php" />
-        <option value="$PROJECT_DIR$/app/app.php" />
-        <option value="$PROJECT_DIR$/app/templates/register.php" />
         <option value="$PROJECT_DIR$/app/templates/status.php" />
         <option value="$PROJECT_DIR$/app/templates/login.php" />
+        <option value="$PROJECT_DIR$/src/Model/Database/StatusFinder.php" />
         <option value="$PROJECT_DIR$/tests/UserDataMapperTest.php" />
         <option value="$PROJECT_DIR$/tests/StatusDataMapperTest.php" />
+        <option value="$PROJECT_DIR$/src/Model/Database/Connection.php" />
+        <option value="$PROJECT_DIR$/src/Model/Database/StatusMapper.php" />
+        <option value="$PROJECT_DIR$/tests/TestStatusDataMapper.php" />
+        <option value="$PROJECT_DIR$/tests/TestAPImethods.php" />
+        <option value="$PROJECT_DIR$/tests/AppTest.php" />
+        <option value="$PROJECT_DIR$/tests/View/TemplateEngineTest.php" />
+        <option value="$PROJECT_DIR$/tests/Routing/RouteTest.php" />
+        <option value="$PROJECT_DIR$/app/app.php" />
+        <option value="$PROJECT_DIR$/app/templates/register.php" />
+        <option value="$PROJECT_DIR$/tests/APImethodsTest.php" />
       </list>
     </option>
   </component>
@@ -271,7 +205,133 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Routing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,6 +364,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -311,7 +372,10 @@
       <recent name="$PROJECT_DIR$/src/Model/Database" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.TestAPImethods.php">
+    <configuration default="false" name="TestAPImethods.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/tests/TestAPImethods.php">
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -325,7 +389,14 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.TestAPImethods.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.TestAPImethods.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -379,34 +450,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="44" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1110">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Http/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="33" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1050">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/status.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/schema.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Database/Connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="9" selection-start="292" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="360">
@@ -426,9 +469,9 @@
         <state line="8" column="43" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="855">
           <folding>
             <element signature="e#34#60#0" expanded="true" />
-            <marker date="1392485364000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
-            <marker date="1392485364000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
-            <marker date="1392485364000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
+            <marker date="1392496217000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
+            <marker date="1392496217000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
+            <marker date="1392496217000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
           </folding>
         </state>
       </provider>
@@ -452,8 +495,8 @@
         <state line="31" column="30" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="630">
           <folding>
             <element signature="e#117#134#0" expanded="true" />
-            <marker date="1392485877000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1392485877000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1392498490000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1392498490000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -484,9 +527,9 @@
         <state line="8" column="43" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="855">
           <folding>
             <element signature="e#34#60#0" expanded="true" />
-            <marker date="1392485364000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
-            <marker date="1392485364000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
-            <marker date="1392485364000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
+            <marker date="1392496217000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
+            <marker date="1392496217000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
+            <marker date="1392496217000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
           </folding>
         </state>
       </provider>
@@ -510,8 +553,8 @@
         <state line="31" column="30" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="630">
           <folding>
             <element signature="e#117#134#0" expanded="true" />
-            <marker date="1392485877000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1392485877000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1392498490000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1392498490000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -606,20 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="7" selection-start="2299" selection-end="2346" vertical-scroll-proportion="-17.5" vertical-offset="1065" max-vertical-offset="2220">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Exception/templates/exception.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="8" selection-start="434" selection-end="434" vertical-scroll-proportion="-11.0" vertical-offset="81" max-vertical-offset="705">
@@ -641,68 +670,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Status.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="64" selection-start="185" selection-end="185" vertical-scroll-proportion="0.26169845" vertical-offset="44" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Database/StatusMapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="57" selection-start="805" selection-end="805" vertical-scroll-proportion="-15.041667" vertical-offset="44" max-vertical-offset="690">
-          <folding>
-            <element signature="e#117#134#0" expanded="true" />
-            <marker date="1392485877000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1392485877000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Database/UserFinder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="35" selection-start="936" selection-end="936" vertical-scroll-proportion="-4.6666665" vertical-offset="488" max-vertical-offset="1095">
-          <folding>
-            <marker date="1392400576000" expanded="true" signature="451:470" placeholder="SELECT * FRO..USERS..." />
-            <marker date="1392400576000" expanded="true" signature="958:997" placeholder="SELECT * FRO..USERS..." />
-            <marker date="1392400576000" expanded="true" signature="1416:1459" placeholder="SELECT * FRO..USERS..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Database/StatusFinder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="92" selection-start="2555" selection-end="2555" vertical-scroll-proportion="-47.5" vertical-offset="105" max-vertical-offset="1755">
-          <folding>
-            <element signature="e#34#60#0" expanded="true" />
-            <marker date="1392485364000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
-            <marker date="1392485364000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
-            <marker date="1392485364000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Database/UserMapper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="53" selection-start="528" selection-end="528" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="555">
           <folding>
-            <marker date="1392488086000" expanded="true" signature="263:326" placeholder="INSERT INTO ..." />
-            <marker date="1392488086000" expanded="true" signature="637:686" placeholder="DELETE FROM ..." />
+            <marker date="1392488086000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1392488086000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="83" selection-start="3858" selection-end="3858" vertical-scroll-proportion="0.5851064" vertical-offset="1545" max-vertical-offset="2580">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="343" selection-end="343" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="360">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,18 +691,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="13" selection-start="706" selection-end="709" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="960">
           <folding>
-            <marker date="1392486850000" expanded="true" signature="107:166" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="694:1056" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="694:728" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="694:704" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="1017:1056" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="1017:1043" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="1017:1055" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="1102:1245" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="1102:1155" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="1127:1155" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="1547:1582" placeholder="..." />
-            <marker date="1392486850000" expanded="true" signature="1561:1582" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392486850000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -740,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Database/Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="2" selection-start="440" selection-end="440" vertical-scroll-proportion="0.5162524" vertical-offset="0" max-vertical-offset="523">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
@@ -754,31 +721,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/UserDataMapperTest.php">
+    <entry file="file://$PROJECT_DIR$/src/Model/Database/StatusFinder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="63" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="765">
+        <state line="14" column="33" selection-start="229" selection-end="230" vertical-scroll-proportion="12.625" vertical-offset="513" max-vertical-offset="1755">
           <folding>
-            <marker date="1392489570000" expanded="true" signature="310:479" placeholder="CREATE TABLE..IF..." />
-            <marker date="1392489570000" expanded="true" signature="792:818" placeholder="SELECT COUNT..USERS..." />
+            <element signature="e#34#60#0" expanded="true" />
+            <marker date="1392496217000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
+            <marker date="1392496217000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
+            <marker date="1392496217000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..STATUSES..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
+    <entry file="file://$PROJECT_DIR$/src/Model/Database/Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="278" selection-end="278" vertical-scroll-proportion="0.3119584" vertical-offset="0" max-vertical-offset="577">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Database/UserFinder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="35" selection-start="936" selection-end="936" vertical-scroll-proportion="-4.6666665" vertical-offset="488" max-vertical-offset="1095">
+          <folding>
+            <marker date="1392400576000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..USERS..." />
+            <marker date="1392400576000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..USERS..." />
+            <marker date="1392400576000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..USERS..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Database/StatusMapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="104" selection-start="456" selection-end="456" vertical-scroll-proportion="0.24610052" vertical-offset="128" max-vertical-offset="705">
+          <folding>
+            <element signature="e#117#134#0" expanded="true" />
+            <marker date="1392498490000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1392498490000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Status.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="64" selection-start="185" selection-end="185" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/UserDataMapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="2" selection-start="1331" selection-end="1331" vertical-scroll-proportion="-28.125" vertical-offset="0" max-vertical-offset="765">
+          <folding>
+            <marker date="1392496236000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392496236000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..USERS..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/StatusDataMapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="795">
+          <folding>
+            <marker date="1392499295000" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1392499295000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..STATUSES..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/StatusDataMapperTest.php">
+    <entry file="file://$PROJECT_DIR$/tests/View/TemplateEngineTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="334" selection-end="605" vertical-scroll-proportion="0.46793762" vertical-offset="0" max-vertical-offset="840">
-          <folding>
-            <marker date="1392490270000" expanded="true" signature="334:603" placeholder="CREATE TABLE..IF..." />
-            <marker date="1392490270000" expanded="true" signature="1019:1048" placeholder="SELECT COUNT..STATUSES..." />
-            <marker date="1392490270000" expanded="true" signature="1531:1550" placeholder="DROP TABLE S..." />
-          </folding>
+        <state line="6" column="60" selection-start="110" selection-end="110" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Routing/RouteTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="51" selection-end="51" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="7" selection-start="2299" selection-end="2346" vertical-scroll-proportion="-18.75" vertical-offset="1035" max-vertical-offset="2220">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/AppTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="49" selection-start="56" selection-end="56" vertical-scroll-proportion="-0.625" vertical-offset="15" max-vertical-offset="1755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="46" selection-start="1372" selection-end="1372" vertical-scroll-proportion="-4.375" vertical-offset="585" max-vertical-offset="2580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Http/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="30" selection-start="476" selection-end="486" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/APImethodsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="36" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.75" vertical-offset="225" max-vertical-offset="930">
+          <folding />
         </state>
       </provider>
     </entry>
