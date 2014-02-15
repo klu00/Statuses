@@ -18,7 +18,7 @@ class UserMapper {
         return $this->connection->executeQuery($query, [
             ':user_id' => $user->getId(),
             ':user_name' => $user->getName(),
-            ':user_password' => password_hash($user->getPassword(),PASSWORD_DEFAULT),
+            ':user_password' => $user->getPassword(),
         ]);
     }
 

@@ -125,7 +125,7 @@ $app->get('/register', function () use ($app) {
 $app->post('/register', function (Request $request) use ($app, $userMapper) {
     $name = $request->getParameter('user');
     $password = $request->getParameter('password');
-    $user = new \Model\User(null, $name, $password);
+    $user = new \Model\User(null, $name, password_hash($password,PASSWORD_DEFAULT));
     $userMapper->persist($user);
     return $app->redirect('/login');
 });
