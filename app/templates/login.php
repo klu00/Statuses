@@ -10,7 +10,7 @@
         <input type="text" name="user">
         <br/>
         <label for="password">Password</label>
-        <input type="text" name="password">
+        <input type="password" name="password">
         <br/>
         <input type="submit" value="Login !">
         <h4>You have no account ? <a href="/register">Register !</a></h4>

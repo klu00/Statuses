@@ -10,10 +10,7 @@
         <input type="text" name="user">
         <br/>
         <label for="password">Password</label>
-        <input type="text" name="password">
-        <br/>
-        <label for="password">Confirm your password :</label>
-        <input type="text">
+        <input type="password" name="password">
         <br/>
         <input type="submit" value="Register !">
     </form>
