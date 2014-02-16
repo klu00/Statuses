@@ -18,12 +18,12 @@ class StatusFinder implements FinderInterface {
         "user" => " WHERE status_user_id = '",
     ];
 
-    public function __construct(Connection $connection) {
+    public function __construct($connection) {
         $this->connection = $connection;
         $this->userFinder = new UserFinder($connection);
     }
 
-    public function findAll(array $parameters = []) {
+    public function findAll(array $parameters = [], $json = false) {
         $query = "SELECT * FROM STATUSES";
         if ($parameters !=null)
             $query .=  $this->constructExtraQuery($parameters);

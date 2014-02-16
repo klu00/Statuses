@@ -6,7 +6,7 @@ use Model\User;
 use Model\Database\Connection;
 
 /*
-class UserDataMapperTest extends TestCase {
+class UserDataMapperTest extends \PHPUnit_Framework_TestCase {
 	private $finder;
 
     public function setUp() {

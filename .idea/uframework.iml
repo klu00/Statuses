@@ -7,10 +7,10 @@
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar://$MODULE_DIR$/tests/goutte.phar" />
+          <root url="phar://$MODULE_DIR$/tests/Goutte/goutte.phar" />
         </CLASSES>
         <SOURCES>
-          <root url="phar://$MODULE_DIR$/tests/goutte.phar" />
+          <root url="phar://$MODULE_DIR$/tests/Goutte/goutte.phar" />
         </SOURCES>
       </library>
     </orderEntry>

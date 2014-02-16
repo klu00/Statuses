@@ -8,7 +8,7 @@ use Model\User;
 class UserMapper {
     private $connection;
 
-    public function __construct(Connection $connection) {
+    public function __construct($connection) {
         $this->connection = $connection;
     }
 
@@ -23,7 +23,6 @@ class UserMapper {
     }
 
     public function remove($status_id) {
-        var_dump($status_id);
         $query = "DELETE FROM STATUSES WHERE status_id = :status_id";
         return $this->connection->executeQuery($query, [
             ':status_id' => $status_id,

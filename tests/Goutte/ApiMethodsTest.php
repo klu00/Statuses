@@ -2,7 +2,7 @@
 
 require_once 'goutte.phar';
 
-class TestAPImethods extends \PHPUnit_Framework_TestCase {
+class ApiMethodsTest extends \PHPUnit_Framework_TestCase {
 
     private $endpoint = 'http://localhost:82';
     private $client;

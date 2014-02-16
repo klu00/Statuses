@@ -1,0 +1,38 @@
+L'application globale fonctionne.
+
+Les routes suivantes existent :
+
+/statuses GET : liste tous les status.
+Possibilité de passer des arguments pour avoir :
+- un tri ordonné (/statuses?orderBy=status_date$desc ou /statuses?orderBy=status_message. Le $desc est optionnel.)
+- une limite (/statuses?limit=2$7 pour avoir 5 status, du 2e au 7e
+- des status spécifique à un utilisateur (/statuses?user=1 pour les status de l'utilisateur d'identifiant 1).
+
+/statuses POST : poste un status
+
+/statuses/1 GET : retourne le status d'id 1
+
+/statuses/1 DELETE : supprime le status d'id 1
+
+
+/register GET : obtient la page pour s'enregistrer
+
+/register POST : envoi des données pour enregistrer un user
+
+
+/login GET : obtient la page de connection
+
+/login POST : envoi des données pour connecter un user
+
+/logout GET : déconnecte un user (session_destroy)
+
+/﻿statusNotFound : redirige sur une page de status not found (404)
+
+/ : redirige sur /statuses GET
+
+
+Tests :
+Problème avec StatusDataMapperTest et UserDataMapperTest :
+le bindValue pour compléter les requêtes ne fonctionne pas avec phpUnit pour une raison que nous ignorons,
+alors que dans l'utilisation normale de l'application, il fonctionne...
+

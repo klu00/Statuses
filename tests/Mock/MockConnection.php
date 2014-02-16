@@ -1,12 +1,9 @@
 <?php
 
-
-namespace Model\Database;
-
-
-class Connection extends \PDO {
-    public function __construct($dsn, $user, $password) {
-        parent::__construct($dsn, $user, $password);
+class MockConnection extends \Model\Database\Connection
+{
+    public function __construct()
+    {
     }
 
     public function executeQuery($query, array $parameters = []) {
@@ -14,6 +11,6 @@ class Connection extends \PDO {
         foreach ($parameters as $name => $value) {
             $stmt->bindValue($name, $value);
         }
-        return $stmt->execute();
+        return $stmt;
     }
-} 
+}
